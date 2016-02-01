@@ -1,0 +1,15 @@
+// Styles for standalone components.
+
+@import "constants";
+
+.grid-layout {
+  pointer-events: none;
+
+  div {
+    border-right: 1px solid $color-grid;
+
+    &:last-child {
+      border: 0;
+    }
+  }
+}

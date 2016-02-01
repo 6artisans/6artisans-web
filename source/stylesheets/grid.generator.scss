@@ -1,0 +1,164 @@
+// Standard Grid Generator
+// Author & copyright (c) 2015: John Polacek
+// Follow on Twitter: @johnpolacek
+
+// Dual MIT & GPL license
+
+// Project Page: https://github.com/johnpolacek/standard-grid-generator
+
+
+// box-sizing: border-box is required
+html { box-sizing: border-box; }
+
+*,
+*:before,
+*:after { box-sizing: inherit; }
+
+@mixin spacing-helpers($prefix, $i, $space-unit) {
+  .#{$prefix}pad-#{$i} {
+    padding: $space-unit;
+  }
+
+  .#{$prefix}pad-#{$i}-left {
+    padding-left: $space-unit;
+  }
+
+  .#{$prefix}pad-#{$i}-right {
+    padding-right: $space-unit;
+  }
+
+  .#{$prefix}pad-#{$i}-top {
+    padding-top: $space-unit;
+  }
+
+  .#{$prefix}pad-#{$i}-bottom {
+    padding-bottom: $space-unit;
+  }
+
+  .#{$prefix}pad-#{$i}-sides {
+    padding-left: $space-unit;
+    padding-right: $space-unit;
+  }
+
+  .#{$prefix}pad-#{$i}-vert {
+    padding-bottom: $space-unit;
+    padding-top: $space-unit;
+  }
+
+  .#{$prefix}marg-#{$i} {
+    margin: $space-unit;
+  }
+
+  .#{$prefix}marg-#{$i}-left {
+    margin-left: $space-unit;
+  }
+
+  .#{$prefix}marg-#{$i}-right {
+    margin-right: $space-unit;
+  }
+
+  .#{$prefix}marg-#{$i}-top {
+    margin-top: $space-unit;
+  }
+
+  .#{$prefix}marg-#{$i}-bottom {
+    margin-bottom: $space-unit;
+  }
+
+  .#{$prefix}marg-#{$i}-sides {
+    margin-left: $space-unit;
+    margin-right: $space-unit;
+  }
+
+  .#{$prefix}marg-#{$i}-vert {
+    margin-bottom: $space-unit;
+    margin-top: $space-unit;
+  }
+}
+
+@mixin grid-classes($prefix: '', $grid-columns: 12, $space-unit: (8px, 16px, 32px), $breakpoint-min: '', $breakpoint-max: '') {
+
+  // grid classes
+  .#{$prefix}grid {
+    clear: none;
+    float: left;
+    margin: 0;
+  }
+
+  @for $i from 1 through $grid-columns {
+    .#{$prefix}grid-#{$i} {
+      @extend .#{$prefix}grid;
+      width: percentage($i / $grid-columns);
+    }
+  }
+
+  // offset classes
+  .#{$prefix}offset-0 {
+    margin-left: 0;
+  }
+
+  @for $i from 1 through $grid-columns {
+    .#{$prefix}offset-#{$i} {
+      margin-left: percentage($i / $grid-columns);
+    }
+  }
+
+  // spacing helper classes
+  @if $space-unit {
+    $i: 1;
+    @each $space-unit in $space-unit {
+      @include spacing-helpers($prefix, $i, $space-unit);
+      $i: $i + 1;
+    }
+    @include spacing-helpers($prefix, 0, 0);
+  }
+}
+
+// generate grid classes for each breakpoint, defaults defined below
+// parameters: number of grid columns, array of breakpoints, array of breakpoint prefixes, breakpoint type px or em, array padding and margin units
+@mixin grid-generator($grid-columns: 12, $breakpoints: (0, 480px, 800px), $breakpoint-prefixes: (s-, m-, l-), $breakpoint-type: 'px', $space-unit: (8px, 16px, 32px)) {
+
+  //* generate top-level grid classes, no prefix */
+  @include grid-classes('', $grid-columns, $space-unit);
+
+  @for $i from 1 through length($breakpoint-prefixes) {
+    $prefix: nth($breakpoint-prefixes, $i);
+    $breakpoint-min: nth($breakpoints, $i);
+
+    // Add one to support pixel breakpoints, EMs don't need the extra bump
+    @if $breakpoint-type == 'px' {
+      $breakpoint-min: nth($breakpoints, $i) + 1;
+    }
+
+    $breakpoint-max: '';
+
+    @if $i < length($breakpoint-prefixes) {
+      $breakpoint-max: nth($breakpoints, $i + 1);
+    }
+
+  //   //* smallest breakpoint */
+    @if $breakpoint-min == 1 {
+
+      @media (max-width: $breakpoint-max) {
+        @include grid-classes($prefix, $grid-columns, $space-unit);
+      }
+
+    } @else {
+
+      //* middle breakpoints */
+      @if $breakpoint-max != '' {
+
+        @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
+          @include grid-classes($prefix, $grid-columns, $space-unit);
+        }
+
+      //* largest breakpoint */
+      } @else {
+
+        @media (min-width: $breakpoint-min) {
+          @include grid-classes($prefix, $grid-columns, $space-unit);
+        }
+      }
+    }
+  }
+}

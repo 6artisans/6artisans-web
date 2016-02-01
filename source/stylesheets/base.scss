@@ -1,0 +1,50 @@
+// Base styles for all project. Project specific styles are defined here.
+
+@import "constants";
+
+html {
+  color: $color-primary;
+  font-family: $font-proxima-regular;
+  font-size: $size-base-font;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-proxima-black;
+  line-height: 1.4em;
+  margin: 0;
+  padding: 0;
+}
+
+// Example of css animation
+//
+// .welcome {
+//   -webkit-animation-name: welcome;
+//   -webkit-animation-duration: .9s;
+// }
+
+// @-webkit-keyframes welcome {
+//   from {
+//     -webkit-transform: scale(0);
+//     opacity: 0;
+//   }
+//   50% {
+//    -webkit-transform: scale(0);
+//    opacity: 0;
+//   }
+//   82.5% {
+//     -webkit-transform: scale(1.03);
+//     -webkit-animation-timing-function: ease-out;
+//     opacity: 1;
+//   }
+//   to {
+//     -webkit-transform: scale(1);
+//   }
+// }

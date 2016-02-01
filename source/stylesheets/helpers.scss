@@ -1,0 +1,107 @@
+// Helper classes for directly usage in html.
+
+@import 'constants';
+@import "mixins";
+
+// overflow helpers
+.over-scroll { overflow: scroll; }
+.over-hidden { overflow: hidden; }
+
+// color helpers
+// .c-primary { color: $color-primary; }
+// .c-moderate { color: $color-moderate; }
+// .c-weak { color: $color-weak; }
+// .c-white { color: $color-white; }
+// .c-grey { color: $color-grey; }
+// .c-light-grey { color: $color-light-grey; }
+
+// display helpers
+.inline { display: inline; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+.flex { display: flex; }
+
+// position helpers
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+.static { position: static; }
+
+.to-top { top: 0; }
+.to-right { right: 0; }
+.to-bottom { bottom: 0; }
+.to-left { left: 0; }
+
+// align helpers
+.h-centered { margin-left: auto; margin-right: auto; }
+
+// text helpers
+.t-lowercase { text-transform: none; }
+.t-caps { text-transform: uppercase; }
+.t-centered { text-align: center; }
+.t-left { text-align: left; }
+.t-right { text-align: right; }
+.t-regular { @include regular(); }
+.t-bold { @include bold(); }
+.t-black { @include black(); }
+.t-nowrap { white-space: nowrap; }
+
+// text-align helpers
+.float-l { float: left; }
+.float-r { float: right; }
+.clear { clear: both; }
+
+// flex helpers
+.space-between { justify-content: space-between; }
+.justify-center { justify-content: center; }
+.center-aligned { align-items: center; }
+.column-direction { flex-direction: column; }
+
+// display helpers
+.hidden { display: none; }
+
+// height helpers
+.half-height { height: 50%; }
+.full-height { height: 100%; }
+.screen-height { height: 100vh; }
+
+// width helpers
+.full-width { max-width: 100%; width: 100%; }
+
+// background helpers
+.cover { background-size: cover; }
+.centered-bg { background-position: center; }
+
+// font helpers
+.f-italic { font-style: italic; }
+
+// Margin and padding rules generator
+@each $attribute in margin, padding {
+  @each $direction in top, right, bottom, left {
+    @for $value from 1 through 7 {
+      // class name ie.: .p-top-2
+      $class-name: '.#{str-slice($attribute, 0, 1)}-#{$direction}-#{$value}';
+      // ie.: margin-bottom
+      $attribute-name: #{$attribute}-#{$direction};
+
+      #{$class-name} {
+        #{$attribute-name}: #{$size-base * $value}px;
+        #{$attribute-name}: #{$value}rem;
+      }
+    }
+  }
+}
+
+// Font size rules generator
+@each $size in 14, 16, 32, 45 {
+  .f-#{$size} {
+    @include font-size(#{$size});
+  }
+}
+
+// Z-index rules generator
+@each $z-index in 1, 2, 3 {
+  .z-index-#{$z-index} {
+    z-index: $z-index;
+  }
+}

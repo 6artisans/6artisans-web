@@ -1,0 +1,32 @@
+@function rem($size) {
+  $rem-size: $size / $size-base;
+  @return #{$rem-size}rem;
+}
+
+@mixin font-size($size) {
+  font-size: #{$size}px; // Fallback in px
+  font-size: rem($size);
+}
+
+@mixin bold() {
+  font-family: $font-proxima-bold;
+  font-weight: bold;
+}
+
+@mixin black() {
+  font-family: $font-proxima-black;
+  font-weight: bold;
+}
+
+@mixin regular() {
+  font-family: $font-proxima-regular;
+  font-weight: normal;
+}
+
+@mixin clearfix() {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
