@@ -23,28 +23,14 @@ h6 {
   padding: 0;
 }
 
-// Example of css animation
-//
-// .welcome {
-//   -webkit-animation-name: welcome;
-//   -webkit-animation-duration: .9s;
-// }
+nav {
+  ul {
+    list-style: none;
+    padding: 0;
+  }
 
-// @-webkit-keyframes welcome {
-//   from {
-//     -webkit-transform: scale(0);
-//     opacity: 0;
-//   }
-//   50% {
-//    -webkit-transform: scale(0);
-//    opacity: 0;
-//   }
-//   82.5% {
-//     -webkit-transform: scale(1.03);
-//     -webkit-animation-timing-function: ease-out;
-//     opacity: 1;
-//   }
-//   to {
-//     -webkit-transform: scale(1);
-//   }
-// }
+  li {
+    margin-bottom: 1.5rem;
+    width: 6rem;
+  }
+}

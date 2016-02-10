@@ -2,11 +2,26 @@
 title: 6 Artisans - od nápadu k úspěšnému byznysu
 ---
 
-<%= image_tag "logo-dark.svg" %>
+<div class="container fixed to-top full-width screen-height none-events">
+  <div class="grid-1 all-events p-left-4 p-top-3 full-height relative">
+    <% link_to "/" do %>
+      <%= image_tag "logo-dark.svg", class: "logo" %>
+    <% end %>
 
-<div class="container">
+    <nav class="p-top-4">
+      <ul>
+        <li><%= link_to "Proč si nás najmout", "#proc-si-nas-najmout", class: "link" %></li>
+        <li><%= link_to "Co umíme zajistit", "#co-umime-zajistit", class: "link" %></li>
+        <li><%= link_to "Kdo jsme", "#kdo-jsme", class: "link" %></li>
+        <li><%= link_to "Kontakt", "#kontakt", class: "link link--red absolute to-bottom m-bottom-5" %></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<div class="container m-top-10">
   <div class="grid-2">&nbsp;</div>
-  <div class="l-grid-2 m-grid-3">
+  <div class="claim l-grid-2 m-grid-3">
     <h2 class="f-45 m-bottom-2">
       Od nápadu<br>
       k úspěšnému byznysu

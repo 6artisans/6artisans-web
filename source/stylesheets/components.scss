@@ -1,6 +1,7 @@
 // Styles for standalone components.
 
 @import "constants";
+@import "mixins";
 
 .grid-layout {
   pointer-events: none;
@@ -11,5 +12,26 @@
     &:last-child {
       border: 0;
     }
+  }
+}
+
+.logo {
+  width: rem(190);
+}
+
+.link {
+  @include font-size(14);
+  border-bottom: 1px solid lighten($color-blue, 40%);
+  color: $color-blue;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color 300ms ease-out;
+
+  &:hover {
+    border-color: currentColor;
+  }
+
+  &--red {
+    color: $color-red;
   }
 }
