@@ -1,0 +1,71 @@
+// Styles for components animations.
+
+.animate-claim {
+  position: relative;
+  animation-duration: 1.6s;
+  animation-name: slidein;
+}
+
+.animate-subclaim {
+  position: relative;
+  animation-duration: 3.4s;
+  animation-name: slidein-fast;
+}
+
+.animate-menu {
+  animation-duration: 4.8s;
+  animation-name: fade-in;
+}
+
+@keyframes slidein {
+  from {
+    left: -100%;
+    opacity: 0;
+  }
+  50% {
+    left: -100%;
+    opacity: 0;
+  }
+  82.5% {
+    left: 2%;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slidein-fast {
+  from {
+    left: -100%;
+    opacity: 0;
+  }
+  75% {
+    left: -100%;
+    opacity: 0;
+  }
+  95% {
+    left: 2%;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  to {
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
