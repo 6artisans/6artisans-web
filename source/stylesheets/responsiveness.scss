@@ -1,0 +1,35 @@
+@media (min-width: 768px) {
+  html {
+    font-size: $size-base * 0.8125;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: $size-base * 0.875;
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: $size-base * 0.9375;
+  }
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: $size-base;
+  }
+}
+
+@media (min-width: 1600px) {
+  html {
+    font-size: $size-base * 1.0625;
+  }
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: $size-base * 1.125;
+  }
+}
