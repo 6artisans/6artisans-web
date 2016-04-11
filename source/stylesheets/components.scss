@@ -35,3 +35,56 @@
     color: $color-red;
   }
 }
+
+.button {
+  background-color: $color-red;
+  color: $color-white;
+  box-shadow: 0 1px 1px 0 #231f20;
+  font-size: 1rem;
+  border-radius: 25px;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 2.5rem;
+  padding: 0 1.45em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.clients {
+  margin-top: 8.75rem;
+  &_logo {
+    &-holder {
+      display: inline-block;
+    }
+  }
+
+  a {
+    margin: 0 auto;
+    vertical-align: middle;
+  }
+}
+
+.team {
+  &__divider {
+    padding-top: 3.4375rem;
+  }
+
+  &__name {
+    line-height: 1.575rem;
+    margin-bottom: 0.65rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.contact {
+  &__to-action {
+    line-height: 1.8125rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.shader {
+  &--white {
+    background-color: $color-white;
+  }
+}

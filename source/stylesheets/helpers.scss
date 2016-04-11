@@ -9,6 +9,7 @@
 
 // color helpers
 .c-primary { color: $color-blue; }
+.c-grey { color: $color-grey; }
 
 // pointer events helpers
 .all-events { pointer-events: all; }
@@ -44,6 +45,10 @@
 .t-bold { @include bold(); }
 .t-black { @include black(); }
 .t-nowrap { white-space: nowrap; }
+
+.vertical-center {
+  vertical-align: center;
+}
 
 // text-align helpers
 .float-l { float: left; }
@@ -92,7 +97,7 @@
 }
 
 // Font size rules generator
-@each $size in 14, 16, 32, 45 {
+@each $size in 14, 16, 21, 32, 45 {
   .f-#{$size} {
     @include font-size(#{$size});
   }
@@ -103,4 +108,13 @@
   .z-index-#{$z-index} {
     z-index: $z-index;
   }
+}
+
+// line height
+
+.l-height-36 {
+  line-height: 2.25rem;
+}
+.l-height-60 {
+  line-height: 3.75rem;
 }

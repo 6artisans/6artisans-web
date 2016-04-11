@@ -1,8 +1,7 @@
 ---
 title: 6 Artisans - od nápadu k úspěšnému byznysu
 ---
-
-<div class="container fixed to-top full-width screen-height none-events">
+<div class="container fixed to-top full-width screen-height none-events z-index-2 animate-menu">
   <div class="grid-1 all-events p-left-4 p-top-3 full-height relative">
     <% link_to "/" do %>
       <%= image_tag "logo-dark.svg", class: "logo" %>
@@ -19,17 +18,194 @@ title: 6 Artisans - od nápadu k úspěšnému byznysu
   </div>
 </div>
 
-<div class="container m-top-10">
-  <div class="grid-2">&nbsp;</div>
+<div class="screen-height container m-top-10">
+  <div class="grid-2 z-index-1 full-height relative shader--white">&nbsp;</div>
   <div class="claim l-grid-2 m-grid-3">
-    <h2 class="f-45 m-bottom-2">
+    <h2 class="f-45 m-bottom-2 animate-claim">
       Od nápadu<br>
-      k úspěšnému byznysu
+      k úspěšnému <br>byznysu
     </h2>
 
-    <h1 class="f-32 t-bold">
+    <h1 class="f-32 t-bold animate-subclaim">
       Navrhujeme & programujeme<br>
       skvělé webové aplikace
     </h1>
+  </div>
+</div>
+
+<div class="grid-6" id="proc-si-nas-najmout"></div>
+<div class="screen-height container m-top-10">
+  <div class="grid-2">&nbsp;</div>
+  <div class="claim l-grid-2 m-grid-3">
+    <h2 class="f-32 m-bottom-2">
+      Proč si nás najmout?
+    </h2>
+
+    <p class="f-16">
+      Nalezení motivovaného CTO může trvat měsíce,
+      sestavení dobrého technického týmu roky.
+       Mnoha společnostem se to dokonce nikdy nepodaří.
+    </p>
+    <p class="f-16">
+      Přinášíme zisk zavedeným společnostem i start-upům:
+    </p>
+    <div class="clients">
+      <div class="clients_logo-holder">
+        <% link_to "/" do %>
+          <%= image_tag "clients/slevomat.png", class: "clients_logo" %>
+        <% end %>
+      </div>
+      <div class="clients_logo-holder">
+        <% link_to "/" do %>
+          <%= image_tag "clients/1188.png", class: "clients_logo" %>
+        <% end %>
+      </div>
+
+      <div class="clients_logo-holder">
+        <% link_to "/" do %>
+          <%= image_tag "clients/hbo.png", class: "clients_logo" %>
+        <% end %>
+      </div>
+      <div class="clients_logo-holder">
+        <% link_to "/" do %>
+          <%= image_tag "clients/sporten.png", class: "clients_logo" %>
+        <% end %>
+      </div>
+      <div class="clients_logo-holder">
+        <% link_to "/" do %>
+          <%= image_tag "clients/miton.png", class: "clients_logo" %>
+        <% end %>
+      </div>
+      <div class="clients_logo-holder">
+        <% link_to "/" do %>
+          <%= image_tag "clients/ignum.png", class: "clients_logo" %>
+        <% end %>
+      </div>
+      <div class="clients_logo-holder">
+        <% link_to "/" do %>
+          <%= image_tag "clients/duha.png", class: "clients_logo" %>
+        <% end %>
+      </div>
+      <div class="clients_logo-holder">
+        <% link_to "/" do %>
+          <%= image_tag "clients/mikov.png", class: "clients_logo" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="grid-6" id="co-umime-zajistit"></div>
+<div class="screen-height container m-top-10">
+  <div class="grid-2">&nbsp;</div>
+  <div class="claim l-grid-2 m-grid-3">
+    <h2 class="f-32 m-bottom-2">
+      Co umíme zajistit?
+    </h2>
+
+    <p class="f-16">
+      Výroba webového projektu v sobě zahrnuje celou řadu různých činnosti.
+      Každý z nás je specialista na určitou oblast, abychom byli schopní zajistit:
+    </p>
+    <p class="f-16">
+      - návrh ovládání a detailní podoby služby<br/>
+      - prototypování a ověření na trhu<br/>
+      - robustní implementace a integrace<br/>
+      - měření úspěšnosti<br/>
+    </p>
+  </div>
+</div>
+
+<div class="grid-6" id="kdo-jsme"></div>
+<div class="screen-height container m-top-10">
+  <div class="grid-2">&nbsp;</div>
+  <div class="claim l-grid-3 m-grid-3">
+    <h2 class="f-32 m-bottom-2">
+      Kdo jsme
+    </h2>
+
+    <p class="f-21 l-height-36">
+      Jsme malý tým s minimálním informačním šumem.
+      Stejní lidé, se kterými si podáte ruku na jednání,
+      budou vyrábět vaši aplikaci.
+    </p>
+    <div class="team">
+      <div class="l-grid-2 m-grid-2">
+        <div>
+          <%= image_tag "team/tomas.png" %>
+        </div>
+        <p class="t-bold f-21 team__name">Tomáš Porazil</p>
+        <p class="f-16">user experience,<br/> development</p>
+      </div>
+      <div class="l-grid-2 m-grid-2">
+        <div>
+          <%= image_tag "team/honza.png" %>
+        </div>
+        <p class="t-bold f-21 team__name">Honza Minárik</p>
+        <p class="f-16">software architecture,<br/> development</p>
+      </div>
+      <div class="l-grid-2 m-grid-2">
+        <div>
+          <%= image_tag "team/david.png" %>
+        </div>
+        <p class="t-bold f-21 team__name">David Schovanec</p>
+        <p class="f-16">frontent development</p>
+      </div>
+      <div class="l-grid-6 team__divider"></div>
+      <div class="l-grid-2 m-grid-2">
+        <div>
+          <%= image_tag "team/josef.png" %>
+        </div>
+        <p class="t-bold f-21 team__name">Josef Rousek</p>
+        <p class="f-16">full-stack development</p>
+      </div>
+      <div class="l-grid-2 m-grid-2">
+        <div>
+          <%= image_tag "team/jano.png" %>
+        </div>
+        <p class="t-bold f-21 team__name">Jano Hovančík</p>
+        <p class="f-16">backend development</p>
+      </div>
+      <div class="l-grid-2 m-grid-2">
+        <div>
+          <%= image_tag "team/petra.png" %>
+        </div>
+        <p class="t-bold f-21 team__name">Petra Špičková</p>
+        <p class="f-16">project management</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="grid-6" id="kontakt"></div>
+<div class="screen-height container m-top-10">
+  <div class="grid-2">&nbsp;</div>
+  <div class="claim l-grid-3 m-grid-3">
+    <h2 class="f-32 m-bottom-2">
+      Kontakt
+    </h2>
+
+    <p class="f-21 l-height-36">
+      Fungující komunikace je základním předpokladem úspěšného projektu.
+      Používáme Slack, Skype, Hangouts, Viber.
+      Rádi se naučíme další způsoby, jak ve firmě komunikujete s dodavateli.
+    </p>
+
+    <div class="f-21 grid-4 ">
+      <p class="c-grey contact__to-action">
+        První konzultace je <br/>
+        vždy zdarma.
+      </p>
+      <%= link_to "napište nám", "mailto:info@6artisans.cz", class: "button" %>
+    </div>
+    <div class="f-21 grid-2">
+      <p class="c-grey contact__to-action">
+        Máte akutní problém, <br/>
+        se kterým můžeme pomoct?
+      </p>
+      <p class="t-bold f-32">
+        <i class="fa fa-phone"></i> 608 975 978
+      </p>
+    </div>
   </div>
 </div>
