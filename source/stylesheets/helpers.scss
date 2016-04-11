@@ -71,6 +71,8 @@
 
 // width helpers
 .full-width { max-width: 100%; width: 100%; }
+.half-width { max-width: 50%; width: 50%; }
+.quarter-width { max-width: 25%; width: 25%; }
 
 // background helpers
 .cover { background-size: cover; }
@@ -78,6 +80,11 @@
 
 // font helpers
 .f-italic { font-style: italic; }
+
+// line height
+.l-height-60 {
+  line-height: 3.75rem;
+}
 
 // Margin and padding rules generator
 @each $attribute in margin, padding {
@@ -89,7 +96,7 @@
       $attribute-name: #{$attribute}-#{$direction};
 
       #{$class-name} {
-        #{$attribute-name}: #{$size-base * $value}px;
+        #{$attribute-name}: $size-base * $value;
         #{$attribute-name}: #{$value}rem;
       }
     }
@@ -97,9 +104,9 @@
 }
 
 // Font size rules generator
-@each $size in 14, 16, 21, 32, 45 {
+@each $size in 14, 16, 18, 21, 32, 45 {
   .f-#{$size} {
-    @include font-size(#{$size});
+    @include font-size($size * 1px);
   }
 }
 
@@ -108,13 +115,4 @@
   .z-index-#{$z-index} {
     z-index: $z-index;
   }
-}
-
-// line height
-
-.l-height-36 {
-  line-height: 2.25rem;
-}
-.l-height-60 {
-  line-height: 3.75rem;
 }

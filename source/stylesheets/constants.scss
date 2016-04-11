@@ -1,6 +1,5 @@
 // Sizes
-$size-base: 16;
-$size-base-font: #{$size-base}px;
+$size-base: 16px;
 
 // Colors
 $color-primary: #231f20;
@@ -9,8 +8,9 @@ $color-red: #e34459;
 $color-grey: grey;
 $color-white: white;
 $color-grid: rgba(147, 166, 180, 0.2);
+$color-grid-unit: rgba(147, 166, 180, 0.6);
 
 // Fonts
-$font-proxima-black: 'proxima_black', 'helvetica', 'sans-serif';
-$font-proxima-bold: 'proxima_bold', 'helvetica', 'sans-serif';
-$font-proxima-regular: 'proxima_regular', 'helvetica', 'sans-serif';
+$font-proxima-black: 'Proxima Nova Bl', 'helvetica', 'sans-serif';
+$font-proxima-bold: 'Proxima Nova Rg', 'helvetica', 'sans-serif';
+$font-proxima-regular: 'Proxima Nova Rg', 'helvetica', 'sans-serif';

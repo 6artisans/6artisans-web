@@ -13,14 +13,20 @@
       border: 0;
     }
   }
+
+  &__unit {
+    color: $color-grid-unit;
+    font-size: rem(11px);
+    padding-left: rem(3px);
+  }
 }
 
 .logo {
-  width: rem(190);
+  width: rem(190px);
 }
 
 .link {
-  @include font-size(14);
+  @include font-size(14px);
   border-bottom: 1px solid lighten($color-blue, 40%);
   color: $color-blue;
   font-weight: 600;
@@ -40,12 +46,12 @@
   background-color: $color-red;
   color: $color-white;
   box-shadow: 0 1px 1px 0 #231f20;
-  font-size: 1rem;
+  font-size: rem(18px);
   border-radius: 25px;
   display: inline-block;
   font-weight: bold;
   line-height: 2.5rem;
-  padding: 0 1.45em;
+  padding: 0.1em 1.8em;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -87,4 +93,9 @@
   &--white {
     background-color: $color-white;
   }
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
 }

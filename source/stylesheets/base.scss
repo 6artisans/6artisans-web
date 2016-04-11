@@ -5,7 +5,7 @@
 html {
   color: $color-primary;
   font-family: $font-proxima-regular;
-  font-size: $size-base-font;
+  font-size: $size-base;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   line-height: 1.4em;
@@ -26,6 +26,7 @@ h6 {
 p {
   margin: 0;
   margin-bottom: 1.56rem;
+  line-height: 1.7em;
 }
 
 nav {
@@ -35,7 +36,11 @@ nav {
   }
 
   li {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5em;
     width: 6rem;
   }
+}
+
+a {
+  text-decoration: none;
 }
