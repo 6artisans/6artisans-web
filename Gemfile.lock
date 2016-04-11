@@ -47,6 +47,9 @@ GEM
     listen (3.0.5)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
+    mgd (0.1.0)
+      middleman (>= 3.0.0)
+      trollop (= 2.1.2)
     middleman (4.0.0)
       coffee-script (~> 2.2)
       compass-import-once (= 1.0.5)
@@ -105,6 +108,7 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
+    trollop (2.1.2)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.7.2)
@@ -118,6 +122,7 @@ PLATFORMS
 
 DEPENDENCIES
   autoprefixer-rails
+  mgd
   middleman (>= 4.0.0)
   middleman-livereload
   tzinfo-data
