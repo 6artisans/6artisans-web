@@ -1,13 +1,13 @@
 ---
-title: 6 Artisans - od nápadu k úspěšnému byznysu
+title: Od nápadu k úspěšnému byznysu - 6 Artisans
 ---
-<div class="container fixed to-top full-width screen-height none-events z-index-2 animate-menu">
-  <div class="grid-1 all-events p-left-4 p-top-3 full-height relative">
-    <% link_to "/" do %>
+<div class="desktop-menu container fixed to-top full-width screen-height none-events z-index-2 animate-menu">
+  <div class="grid-1 all-events p-left-4 p-top-4 full-height relative">
+    <% link_to "#" do %>
       <%= image_tag "logo-dark.svg", class: "logo" %>
     <% end %>
 
-    <nav class="p-top-4">
+    <nav class="p-top-3">
       <ul>
         <li>
           <% link_to "#co-delame", class: "block" do %>
@@ -30,7 +30,7 @@ title: 6 Artisans - od nápadu k úspěšnému byznysu
           <% end %>
         </li>
         <li>
-          <% link_to "#kontakt", class: "block absolute to-bottom m-bottom-5" do %>
+          <% link_to "#kontakt", class: "block" do %>
             <span class="f-16 link link--red">Kontakt</span>
           <% end %>
         </li>
@@ -39,10 +39,14 @@ title: 6 Artisans - od nápadu k úspěšnému byznysu
   </div>
 </div>
 
-<div class="screen-height container m-top-10">
-  <div class="grid-2 z-index-1 full-height relative shader--white">&nbsp;</div>
-  <div class="l-grid-2 m-grid-3">
-    <h2 class="f-45 m-bottom-2 animate-claim">
+<div class="section section--without-padding cover grid-6">
+  <div class="s-grid-1 m-grid-2 l-grid-2 z-index-1 full-height relative shader--white">&nbsp;</div>
+  <div class="s-grid-4 m-grid-3 l-grid-2 relative">
+    <% link_to "#", class: "mobile-logo absolute animate-menu m-top-4" do %>
+      <%= image_tag "logo-dark.svg", class: "logo" %>
+    <% end %>
+
+    <h2 class="f-45 m-bottom-2 animate-claim p-top-10">
       Od nápadu<br>
       k úspěšnému <br>byznysu
     </h2>
@@ -52,23 +56,40 @@ title: 6 Artisans - od nápadu k úspěšnému byznysu
       skvělé webové aplikace
     </h1>
   </div>
+  <div class="s-grid-1">&nbsp;</div>
 </div>
 
 <div class="grid-6" id="co-delame"></div>
-<div class="screen-height container m-top-10">
-  <div class="grid-2">&nbsp;</div>
+<div class="section grid-6">
+  <div class="s-grid-0 m-grid-2 l-grid-2">&nbsp;</div>
   <div class="l-grid-3 m-grid-3">
     <h2 class="f-32 m-bottom-2">Co děláme</h2>
     <p class="f-21 m-bottom-3">
       Specializujeme se na návrh, vývoj a řízení inovativních webových projektů. Velmi úzce pracujeme s potenciálními uživateli, testujeme a prototypujeme, abychom vytvořili produkt, který se bude intuitivně ovládat a uživatelé ho budou mít rádi.
     </p>
-    <%= image_tag "process.png", class: "image" %>
+
+    <div class="flex space-between">
+      <div class="t-centered m-right-2">
+        <%= image_tag "ideation.png", class: "image" %>
+        <div class="t-bold c-grey m-top-1">Ideace</div>
+      </div>
+      <div class="t-centered m-right-2">
+        <%= image_tag "prototype.png", class: "image" %>
+        <div class="t-bold c-grey m-top-1">Prototypování</div>
+      </div>
+      <div class="t-centered">
+        <%= image_tag "product.png", class: "image" %>
+        <div class="t-bold c-grey m-top-1">Produkt</div>
+      </div>
+    </div>
+
+
   </div>
 </div>
 
 <div class="grid-6" id="proc-my"></div>
-<div class="screen-height container m-top-10">
-  <div class="grid-2">&nbsp;</div>
+<div class="section grid-6">
+  <div class="s-grid-0 m-grid-2 l-grid-2">&nbsp;</div>
   <div class="l-grid-3 m-grid-3">
     <h2 class="f-32 m-bottom-2">Proč my</h2>
     <p class="f-21">
@@ -78,9 +99,9 @@ title: 6 Artisans - od nápadu k úspěšnému byznysu
 </div>
 
 <div class="grid-6" id="kdo-jsme"></div>
-<div class="screen-height container m-top-3">
-  <div class="grid-2">&nbsp;</div>
-  <div class="l-grid-3 m-grid-3">
+<div class="section grid-6">
+  <div class="s-grid-0 m-grid-2 l-grid-2">&nbsp;</div>
+  <div class="m-grid-3 l-grid-3">
     <h2 class="f-32 m-bottom-2">
       Kdo jsme
     </h2>
@@ -91,46 +112,33 @@ title: 6 Artisans - od nápadu k úspěšnému byznysu
       budou vyrábět vaši aplikaci.
     </p>
     <div class="team">
-      <div class="l-grid-2 m-grid-2">
-        <div>
-          <%= image_tag "team/tomas.png", class: "image" %>
-        </div>
+      <div class="team__member grid-2">
+        <%= image_tag "team/tomas.png", class: "image" %>
         <p class="t-bold f-21 team__name">Tomáš Porazil</p>
         <p class="f-16">user experience,<br/> development</p>
       </div>
-      <div class="l-grid-2 m-grid-2">
-        <div>
-          <%= image_tag "team/honza.png", class: "image" %>
-        </div>
+      <div class="team__member grid-2">
+        <%= image_tag "team/honza.png", class: "image" %>
         <p class="t-bold f-21 team__name">Honza Minárik</p>
         <p class="f-16">software architecture,<br/> development</p>
       </div>
-      <div class="l-grid-2 m-grid-2">
-        <div>
-          <%= image_tag "team/david.png", class: "image" %>
-        </div>
+      <div class="team__member grid-2">
+        <%= image_tag "team/david.png", class: "image" %>
         <p class="t-bold f-21 team__name">David Schovanec</p>
         <p class="f-16">frontent development</p>
       </div>
-      <div class="l-grid-6 team__divider"></div>
-      <div class="l-grid-2 m-grid-2">
-        <div>
-          <%= image_tag "team/josef.png", class: "image" %>
-        </div>
+      <div class="team__member grid-2">
+        <%= image_tag "team/josef.png", class: "image" %>
         <p class="t-bold f-21 team__name">Josef Rousek</p>
         <p class="f-16">full-stack development</p>
       </div>
-      <div class="l-grid-2 m-grid-2">
-        <div>
-          <%= image_tag "team/jano.png", class: "image" %>
-        </div>
+      <div class="team__member grid-2">
+        <%= image_tag "team/jano.png", class: "image" %>
         <p class="t-bold f-21 team__name">Jano Hovančík</p>
         <p class="f-16">backend development</p>
       </div>
-      <div class="l-grid-2 m-grid-2">
-        <div>
-          <%= image_tag "team/petra.png", class: "image" %>
-        </div>
+      <div class="team__member grid-2">
+        <%= image_tag "team/petra.png", class: "image" %>
         <p class="t-bold f-21 team__name">Petra Špičková</p>
         <p class="f-16">project management</p>
       </div>
@@ -139,33 +147,30 @@ title: 6 Artisans - od nápadu k úspěšnému byznysu
 </div>
 
 <div class="grid-6" id="reference"></div>
-<div class="screen-height container m-top-10">
-  <div class="grid-2">&nbsp;</div>
+<div class="section grid-6">
+  <div class="s-grid-0 m-grid-2 l-grid-2">&nbsp;</div>
   <div class="l-grid-3 m-grid-3">
     <h2 class="f-32 m-bottom-2">Reference</h2>
     <p class="f-21">
       Přinášíme inovace zavedeným společnostem i&nbsp;start-upům:
     </p>
-    <div class="m-top-6 flex center-aligned full-width">
-      <div class="quarter-width t-centered p-left-1 p-right-1"><%= image_tag "clients/slevomat.png", class: "image" %></div>
-      <div class="quarter-width t-centered p-left-1 p-right-1"><%= image_tag "clients/1188.png", class: "image" %></div>
-      <div class="quarter-width t-centered p-left-1 p-right-1"><%= image_tag "clients/hbo.png", class: "image" %></div>
-      <div class="quarter-width t-centered p-left-1 p-right-1"><%= image_tag "clients/sporten.png", class: "image" %></div>
-    </div>
-
-    <div class="m-top-2 flex center-aligned full-width">
-      <div class="quarter-width t-centered p-left-1 p-right-1"><%= image_tag "clients/miton.png", class: "image" %></div>
-      <div class="quarter-width t-centered p-left-1 p-right-1"><%= image_tag "clients/ignum.png", class: "image" %></div>
-      <div class="quarter-width t-centered p-left-1 p-right-1"><%= image_tag "clients/duha.png", class: "image" %></div>
-      <div class="quarter-width t-centered p-left-1 p-right-1"><%= image_tag "clients/mikov.png", class: "image" %></div>
+    <div class="m-top-4 flex wrap center-aligned full-width">
+      <div class="reference t-centered m-bottom-2 p-left-1 p-right-1"><%= image_tag "clients/slevomat.png", class: "image" %></div>
+      <div class="reference t-centered m-bottom-2 p-left-1 p-right-1"><%= image_tag "clients/1188.png", class: "image" %></div>
+      <div class="reference t-centered m-bottom-2 p-left-1 p-right-1"><%= image_tag "clients/hbo.png", class: "image" %></div>
+      <div class="reference t-centered m-bottom-2 p-left-1 p-right-1"><%= image_tag "clients/sporten.png", class: "image" %></div>
+      <div class="reference t-centered m-bottom-2 p-left-1 p-right-1"><%= image_tag "clients/miton.png", class: "image" %></div>
+      <div class="reference t-centered m-bottom-2 p-left-1 p-right-1"><%= image_tag "clients/ignum.png", class: "image" %></div>
+      <div class="reference t-centered m-bottom-2 p-left-1 p-right-1"><%= image_tag "clients/duha.png", class: "image" %></div>
+      <div class="reference t-centered m-bottom-2 p-left-1 p-right-1"><%= image_tag "clients/mikov.png", class: "image" %></div>
     </div>
   </div>
 </div>
 
 <div class="grid-6" id="kontakt"></div>
-<div class="screen-height container m-top-10">
-  <div class="grid-2">&nbsp;</div>
-  <div class="l-grid-3 m-grid-3">
+<div class="section grid-6">
+  <div class="s-grid-0 m-grid-2 l-grid-2">&nbsp;</div>
+  <div class="m-grid-3 l-grid-3">
     <h2 class="f-32 m-bottom-2">
       Kontakt
     </h2>
@@ -175,16 +180,17 @@ title: 6 Artisans - od nápadu k úspěšnému byznysu
       Rádi se naučíme další způsoby, jak ve firmě komunikujete s dodavateli.
     </p>
   </div>
-  <div class="grid-1">&nbsp;</div>
-  <div class="grid-2">&nbsp;</div>
-  <div class="f-21 grid-2">
+  <div class="s-grid-0 m-grid-1 l-grid-1">&nbsp;</div>
+
+  <div class="s-grid-0 m-grid-2 l-grid-2">&nbsp;</div>
+  <div class="f-21 s-grid-6 grid-2 p-bottom-3">
     <p class="c-grey contact__to-action">
       První konzultace<br/>
       je zdarma.
     </p>
     <%= link_to "napište nám", "mailto:info@6artisans.cz", class: "button" %>
   </div>
-  <div class="f-21 grid-2">
+  <div class="f-21 s-grid-6 grid-2 p-bottom-3">
     <p class="c-grey contact__to-action">
       Máte problém?<br/>
       Zavolejte.

@@ -1,6 +1,68 @@
+@media (min-width: 0px) {
+  html {
+    font-size: $size-base * 0.75;
+  }
+
+  .s-grid-0 {
+    display: none;
+  }
+
+  .desktop-menu, .grid-layout__unit {
+    display: none;
+  }
+
+  .section {
+    min-height: auto;
+    padding: 3rem 2rem 0;
+
+    &--without-padding {
+      padding: 0;
+    }
+  }
+
+  .reference {
+    width: 33%;
+    max-width: 33%;
+  }
+
+  .cover {
+    height: 100vh;
+  }
+}
+
 @media (min-width: 768px) {
   html {
     font-size: $size-base * 0.8125;
+  }
+
+  .mobile-logo {
+    display: none;
+  }
+
+  .s-grid-0 {
+    display: block;
+  }
+
+  .desktop-menu, .grid-layout__unit {
+    display: block;
+  }
+
+  .section {
+    min-height: 100vh;
+    padding: 10rem 0 0;
+
+    &--without-padding {
+      padding: 0;
+    }
+  }
+
+  .reference {
+    width: 25%;
+    max-width: 25%;
+  }
+
+  .cover {
+    height: auto;
   }
 }
 

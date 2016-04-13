@@ -60,6 +60,7 @@
 .justify-center { justify-content: center; }
 .center-aligned { align-items: center; }
 .column-direction { flex-direction: column; }
+.wrap { flex-wrap: wrap; }
 
 // display helpers
 .hidden { display: none; }
@@ -89,7 +90,7 @@
 // Margin and padding rules generator
 @each $attribute in margin, padding {
   @each $direction in top, right, bottom, left {
-    @for $value from 1 through 10 {
+    @for $value from 0 through 10 {
       // class name ie.: .p-top-2
       $class-name: '.#{str-slice($attribute, 0, 1)}-#{$direction}-#{$value}';
       // ie.: margin-bottom
