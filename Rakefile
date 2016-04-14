@@ -4,7 +4,6 @@ require "tmpdir"
 GITHUB_REPONAME = "6artisans/6artisans-web"
 
 namespace :site do
-
   desc "Generate and publish"
   task :publish do
     Dir.mktmpdir do |tmp|
@@ -29,3 +28,5 @@ namespace :site do
     end
   end
 end
+
+task default: "site:publish"
