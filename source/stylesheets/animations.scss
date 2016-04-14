@@ -2,18 +2,18 @@
 
 .animate-claim {
   position: relative;
-  animation-duration: 1.6s;
+  animation-duration: 1.0s;
   animation-name: slidein;
 }
 
 .animate-subclaim {
   position: relative;
-  animation-duration: 3.4s;
+  animation-duration: 2.0s;
   animation-name: slidein-fast;
 }
 
 .animate-menu {
-  animation-duration: 4.8s;
+  animation-duration: 3.0s;
   animation-name: fade-in;
 }
 
@@ -22,15 +22,18 @@
     left: -100%;
     opacity: 0;
   }
-  50% {
+
+  10% {
     left: -100%;
     opacity: 0;
   }
-  82.5% {
+
+  70% {
     left: 2%;
     animation-timing-function: ease-out;
     opacity: 1;
   }
+
   to {
     left: 0;
     opacity: 1;
@@ -42,15 +45,18 @@
     left: -100%;
     opacity: 0;
   }
-  75% {
+
+  40% {
     left: -100%;
     opacity: 0;
   }
-  95% {
+
+  80% {
     left: 2%;
     animation-timing-function: ease-out;
     opacity: 1;
   }
+
   to {
     left: 0;
     opacity: 1;
@@ -59,13 +65,23 @@
 
 @keyframes fade-in {
   from {
+    left: -100%;
     opacity: 0;
   }
-  75% {
+
+  40% {
+    left: -100%;
     opacity: 0;
   }
-  to {
+
+  80% {
+    left: 2%;
     animation-timing-function: ease-out;
+    opacity: 1;
+  }
+
+  to {
+    left: 0;
     opacity: 1;
   }
 }
