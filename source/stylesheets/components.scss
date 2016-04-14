@@ -26,7 +26,6 @@
 }
 
 .link {
-  @include font-size(14px);
   border-bottom: 1px solid lighten($color-blue, 40%);
   color: $color-blue;
   font-weight: 600;
