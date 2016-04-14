@@ -16,8 +16,6 @@ namespace :site do
       Dir.chdir tmp
 
       system "git init"
-      system "git config user.email \"deploy@6artisans.cz\""
-      system "git config user.name \"Deploy\""
       system "git add ."
 
       message = "Site updated at #{Time.now.utc}"
