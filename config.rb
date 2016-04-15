@@ -42,3 +42,32 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 end
+
+activate :google_analytics do |ga|
+  # Property ID (default = nil)
+  ga.tracking_id = 'UA-43071332-1'
+
+  # Removing the last octet of the IP address (default = false)
+  # ga.anonymize_ip = false
+
+  # Tracking across a domain and its subdomains (default = nil)
+  ga.domain_name = '6artisans.cz'
+
+  # Tracking across multiple domains and subdomains (default = false)
+  # ga.allow_linker = false
+
+  # Enhanced Link Attribution (default = false)
+  # ga.enhanced_link_attribution = false
+
+  # Tracking Code Debugger (default = false)
+  ga.debug = true
+
+  # Tracking in development environment (default = true)
+  # ga.development = true
+
+  # Compress the JavaScript code (default = false)
+  ga.minify = true
+
+  # Output style - :html includes <script> tag (default = :html)
+  # ga.output = :js
+end
