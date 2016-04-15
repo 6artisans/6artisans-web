@@ -9,7 +9,6 @@
     <title><%= current_page.data.title || "6 Artisans" %></title>
 
     <%= stylesheet_link_tag :application %>
-    <%= javascript_include_tag :all %>
     <link href="images/favicon.ico" rel="shortcut icon">
   </head>
 
@@ -66,5 +65,7 @@
         <div class="grid-1 grid-layout__unit">35</div>
       </div>
     </div>
+
+    <%= javascript_include_tag :all %>
   </body>
 </html>
