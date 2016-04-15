@@ -60,7 +60,7 @@ activate :google_analytics do |ga|
   # ga.enhanced_link_attribution = false
 
   # Tracking Code Debugger (default = false)
-  ga.debug = true
+  # ga.debug = true
 
   # Tracking in development environment (default = true)
   # ga.development = true
