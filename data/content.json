@@ -1,0 +1,46 @@
+{
+  "team": [
+    {
+      "name": "Tomáš Porazil",
+      "image": "tomas.png",
+      "title": "user experience,<br/> development"
+    },
+    {
+      "name": "Honza Minárik",
+      "image": "honza.png",
+      "title": "software architecture,<br/> development"
+    },
+    {
+      "name": "David Schovanec",
+      "image": "david.png",
+      "title": "frontent development"
+    },
+    {
+      "name": "Jano Hovančík",
+      "image": "jano.png",
+      "title": "backend development"
+    },
+    {
+      "name": "Josef Rousek",
+      "image": "josef.png",
+      "title": "full-stack development"
+    },
+    {
+      "name": "Petra Špičková",
+      "image": "petra.png",
+      "title": "project management"
+    }
+  ],
+  "clients": [
+    "slevomat",
+    "1188",
+    "hbo",
+    "sporten",
+    "miton",
+    "ignum",
+    "duha",
+    "mikov"
+  ]
+}
+
+

@@ -25,11 +25,6 @@ title: Od nápadu k úspěšnému byznysu - 6 Artisans
           <% end %>
         </li>
         <li>
-          <% link_to "#reference", class: "block" do %>
-            <span class="f-16 link">Reference</span>
-          <% end %>
-        </li>
-        <li>
           <% link_to "#kontakt", class: "block" do %>
             <span class="f-16 link link--red">Kontakt</span>
           <% end %>
@@ -95,6 +90,14 @@ title: Od nápadu k úspěšnému byznysu - 6 Artisans
     <p class="f-21">
       Nalezení motivovaného CTO může trvat měsíce, sestavení dobrého technického týmu roky. Mnoha společnostem se to dokonce nikdy nepodaří. Najměte si raději celý sehraný tým, který zvládne vyrobit váš online produkt od začátku do konce.
     </p>
+    <p class="f-21">
+      Přinášíme inovace zavedeným společnostem i&nbsp;start-upům:
+    </p>
+    <div class="m-top-4 flex wrap center-aligned full-width">
+      <% data.content.clients.each do |client| %>
+        <div class="reference t-centered m-bottom-2 p-left-1 p-right-1"><%= image_tag "clients/#{client}.png", class: "image" %></div>
+      <% end %>
+    </div>
   </div>
 </div>
 
@@ -109,58 +112,16 @@ title: Od nápadu k úspěšnému byznysu - 6 Artisans
     <p class="f-21 m-bottom-2">
       Jsme malý tým s minimálním informačním šumem. Stejní lidé, se kterými si podáte ruku na jednání, budou vyrábět vaši aplikaci.
     </p>
-    <div class="team">
-      <div class="team__member s-grid-3 m-grid-2 l-grid-2">
-        <%= image_tag "team/tomas.png", class: "image" %>
-        <p class="t-bold f-21 team__name">Tomáš Porazil</p>
-        <p class="f-16">user experience,<br/> development</p>
-      </div>
-      <div class="team__member s-grid-3 m-grid-2 l-grid-2">
-        <%= image_tag "team/honza.png", class: "image" %>
-        <p class="t-bold f-21 team__name">Honza Minárik</p>
-        <p class="f-16">software architecture,<br/> development</p>
-      </div>
-      <div class="team__member s-grid-3 m-grid-2 l-grid-2">
-        <%= image_tag "team/david.png", class: "image" %>
-        <p class="t-bold f-21 team__name">David Schovanec</p>
-        <p class="f-16">frontent development</p>
-      </div>
-      <div class="team__member s-grid-3 m-grid-2 l-grid-2">
-        <%= image_tag "team/josef.png", class: "image" %>
-        <p class="t-bold f-21 team__name">Josef Rousek</p>
-        <p class="f-16">full-stack development</p>
-      </div>
-      <div class="team__member s-grid-3 m-grid-2 l-grid-2">
-        <%= image_tag "team/jano.png", class: "image" %>
-        <p class="t-bold f-21 team__name">Jano Hovančík</p>
-        <p class="f-16">backend development</p>
-      </div>
-      <div class="team__member s-grid-3 m-grid-2 l-grid-2">
-        <%= image_tag "team/petra.png", class: "image" %>
-        <p class="t-bold f-21 team__name">Petra Špičková</p>
-        <p class="f-16">project management</p>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="grid-6" id="reference"></div>
-<div class="section grid-6">
-  <div class="s-grid-0 m-grid-2 l-grid-2">&nbsp;</div>
-  <div class="l-grid-3 m-grid-3">
-    <h2 class="f-32 m-bottom-2">Reference</h2>
-    <p class="f-21">
-      Přinášíme inovace zavedeným společnostem i&nbsp;start-upům:
-    </p>
-    <div class="m-top-4 flex wrap center-aligned full-width">
-      <div class="reference t-centered m-bottom-2 p-left-1 p-right-1"><%= image_tag "clients/slevomat.png", class: "image" %></div>
-      <div class="reference t-centered m-bottom-2 p-left-1 p-right-1"><%= image_tag "clients/1188.png", class: "image" %></div>
-      <div class="reference t-centered m-bottom-2 p-left-1 p-right-1"><%= image_tag "clients/hbo.png", class: "image" %></div>
-      <div class="reference t-centered m-bottom-2 p-left-1 p-right-1"><%= image_tag "clients/sporten.png", class: "image" %></div>
-      <div class="reference t-centered m-bottom-2 p-left-1 p-right-1"><%= image_tag "clients/miton.png", class: "image" %></div>
-      <div class="reference t-centered m-bottom-2 p-left-1 p-right-1"><%= image_tag "clients/ignum.png", class: "image" %></div>
-      <div class="reference t-centered m-bottom-2 p-left-1 p-right-1"><%= image_tag "clients/duha.png", class: "image" %></div>
-      <div class="reference t-centered m-bottom-2 p-left-1 p-right-1"><%= image_tag "clients/mikov.png", class: "image" %></div>
+
+    <div class="team">
+      <% data.content.team.each do |member| %>
+        <div class="team__member s-grid-3 m-grid-2 l-grid-2">
+          <%= image_tag "team/#{member.image}", class: "image" %>
+          <p class="t-bold f-21 team__name"><%= member.name %></p>
+          <p class="f-16"><%= member.title %></p>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
