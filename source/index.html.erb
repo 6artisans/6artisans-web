@@ -142,10 +142,12 @@ title: Od nápadu k úspěšnému byznysu - 6 Artisans
   <div class="s-grid-0 m-grid-2 l-grid-2">&nbsp;</div>
   <div class="f-21 s-grid-6 grid-2 p-bottom-3">
     <p class="c-grey contact__to-action">
-      První konzultace<br/>
-      je zdarma.
+      První konzultace je zdarma.<br/>
+      Napište nám.
     </p>
-    <%= link_to "napište nám", "mailto:info@6artisans.cz", class: "button" %>
+    <p class="t-bold f-32">
+      <%= link_to "info@6artisans.cz", "mailto:info@6artisans.cz", class: "link" %>
+    </p>
   </div>
   <div class="f-21 s-grid-6 grid-2 p-bottom-3">
     <p class="c-grey contact__to-action">
@@ -153,7 +155,9 @@ title: Od nápadu k úspěšnému byznysu - 6 Artisans
       Zavolejte Honzovi.
     </p>
     <p class="t-bold f-32">
-      <%= image_tag "phone.png", class: "phone-icon" %> <span>608 975 978</span>
+      <% link_to "tel:+420608975978", class: "c-black" do %>
+        <%= image_tag "phone.png", class: "phone-icon" %> <span>608 975 978</span>
+      <% end %>
     </p>
   </div>
 </div>
