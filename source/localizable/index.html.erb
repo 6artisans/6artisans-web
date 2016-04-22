@@ -1,5 +1,5 @@
 ---
-title: Od nápadu k úspěšnému byznysu - 6 Artisans
+title: :page_title
 ---
 <div class="desktop-menu container fixed to-top full-width screen-height none-events z-index-2 animate-menu">
   <div class="grid-1 all-events p-left-4 p-top-4 full-height relative">
@@ -11,22 +11,22 @@ title: Od nápadu k úspěšnému byznysu - 6 Artisans
       <ul>
         <li>
           <% link_to "#co-delame", class: "block" do %>
-            <span class="f-16 link">Co děláme</span>
+            <span class="f-16 link"><%=t :title, scope: :services %></span>
           <% end %>
         </li>
         <li>
           <% link_to "#proc-my", class: "block" do %>
-            <span class="f-16 link">Proč my</span>
+            <span class="f-16 link"><%=t :title, scope: :references %></span>
           <% end %>
         </li>
         <li>
           <% link_to "#kdo-jsme", class: "block" do %>
-            <span class="f-16 link">Kdo jsme</span>
+            <span class="f-16 link"><%=t :title, scope: :team %></span>
           <% end %>
         </li>
         <li>
           <% link_to "#kontakt", class: "block" do %>
-            <span class="f-16 link link--red">Kontakt</span>
+            <span class="f-16 link link--red"><%=t :title, scope: :contact %></span>
           <% end %>
         </li>
       </ul>
@@ -42,13 +42,11 @@ title: Od nápadu k úspěšnému byznysu - 6 Artisans
     <% end %>
 
     <h2 class="f-45 m-bottom-2 animate-claim p-top-10">
-      Od nápadu<br>
-      k úspěšnému <br>byznysu
+      <%=t :title %>
     </h2>
 
     <h1 class="f-32 t-bold animate-subclaim">
-      Navrhujeme & programujeme<br>
-      skvělé webové aplikace
+      <%=t :subtitle %>
     </h1>
   </div>
   <div class="s-grid-1">&nbsp;</div>
@@ -58,27 +56,25 @@ title: Od nápadu k úspěšnému byznysu - 6 Artisans
 <div class="section grid-6">
   <div class="s-grid-0 m-grid-2 l-grid-2">&nbsp;</div>
   <div class="l-grid-3 m-grid-3">
-    <h2 class="f-32 m-bottom-2">Co děláme</h2>
+    <h2 class="f-32 m-bottom-2"><%=t :title, scope: :services  %></h2>
     <p class="f-21 m-bottom-3">
-      Specializujeme se na návrh, vývoj a řízení inovativních webových projektů. Velmi úzce pracujeme s potenciálními uživateli, testujeme a prototypujeme, abychom vytvořili produkt, který se bude intuitivně ovládat a uživatelé ho budou mít rádi.
+      <%=t :specialization, scope: :services %>
     </p>
 
     <div class="flex space-between wrap">
       <div class="t-centered m-right-2 p-bottom-3 s-grid-6 m-grid-2 l-grid-2">
         <%= image_tag "ideation.png", class: "image" %>
-        <div class="t-bold c-grey m-top-1">Ideace</div>
+        <div class="t-bold c-grey m-top-1"><%=t :ideation, scope: :services %></div>
       </div>
       <div class="t-centered m-right-2 p-bottom-3 s-grid-6 m-grid-2 l-grid-2">
         <%= image_tag "prototype.png", class: "image" %>
-        <div class="t-bold c-grey m-top-1">Prototypování</div>
+        <div class="t-bold c-grey m-top-1"><%=t :prototyping, scope: :services %></div>
       </div>
       <div class="t-centered p-bottom-3 s-grid-6 m-grid-2 l-grid-2">
         <%= image_tag "product.png", class: "image" %>
-        <div class="t-bold c-grey m-top-1">Produkt</div>
+        <div class="t-bold c-grey m-top-1"><%=t :product, scope: :services %></div>
       </div>
     </div>
-
-
   </div>
 </div>
 
@@ -86,12 +82,12 @@ title: Od nápadu k úspěšnému byznysu - 6 Artisans
 <div class="section grid-6">
   <div class="s-grid-0 m-grid-2 l-grid-2">&nbsp;</div>
   <div class="l-grid-3 m-grid-3">
-    <h2 class="f-32 m-bottom-2">Proč my</h2>
+    <h2 class="f-32 m-bottom-2"><%=t :title, scope: [:references] %></h2>
     <p class="f-21">
-      Nalezení motivovaného CTO může trvat měsíce, sestavení dobrého technického týmu roky. Mnoha společnostem se to dokonce nikdy nepodaří. Najměte si raději celý sehraný tým, který zvládne vyrobit váš online produkt od začátku do konce.
+      <%=t :cto, scope: [:references] %>
     </p>
     <p class="f-21">
-      Přinášíme inovace zavedeným společnostem i&nbsp;start-upům:
+      <%=t :our_clients, scope: [:references] %>
     </p>
     <div class="m-top-4 flex wrap center-aligned full-width">
       <% data.content.clients.each do |client| %>
@@ -106,11 +102,11 @@ title: Od nápadu k úspěšnému byznysu - 6 Artisans
   <div class="s-grid-0 m-grid-2 l-grid-2">&nbsp;</div>
   <div class="m-grid-3 l-grid-3">
     <h2 class="f-32 m-bottom-2">
-      Kdo jsme
+      <%=t :title, scope: :team %>
     </h2>
 
     <p class="f-21 m-bottom-2">
-      Jsme malý tým s minimálním informačním šumem. Stejní lidé, se kterými si podáte ruku na jednání, budou vyrábět vaši aplikaci.
+      <%=t :description, scope: :team %>
     </p>
 
 
@@ -131,10 +127,10 @@ title: Od nápadu k úspěšnému byznysu - 6 Artisans
   <div class="s-grid-0 m-grid-2 l-grid-2">&nbsp;</div>
   <div class="m-grid-3 l-grid-3">
     <h2 class="f-32 m-bottom-2">
-      Kontakt
+      <%=t :title, scope: [:contact] %>
     </h2>
     <p class="f-21">
-      Fungující komunikace je základním předpokladem úspěšného projektu a proto jsme zvyklí pracovat v úzké spolupráci s klientem. Rádi se s vámi sejdeme a poslechneme si váš příběh. Sídlíme v pražském <%= link_to "Impact Hubu", "http://www.hubpraha.cz/", class: "link" %> a děláme skvělou kávu.
+      <%=t :comunication, scope: [:contact] %>
     </p>
   </div>
   <div class="s-grid-0 m-grid-1 l-grid-1">&nbsp;</div>
@@ -142,21 +138,19 @@ title: Od nápadu k úspěšnému byznysu - 6 Artisans
   <div class="s-grid-0 m-grid-2 l-grid-2">&nbsp;</div>
   <div class="f-21 s-grid-6 grid-2 p-bottom-3">
     <p class="c-grey contact__to-action">
-      První konzultace je zdarma.<br/>
-      Napište nám.
+      <%=t :email_us, scope: :contact %>
     </p>
     <p class="t-bold f-32">
-      <%= link_to "info@6artisans.cz", "mailto:info@6artisans.cz", class: "link" %>
+      <%= link_to t("contact.email"), "mailto:#{t("contact.email")}", class: "link" %>
     </p>
   </div>
   <div class="f-21 s-grid-6 grid-2 p-bottom-3">
     <p class="c-grey contact__to-action">
-      Raději si povídáte?<br/>
-      Zavolejte Honzovi.
+      <%=t :call_us, scope: :contact %>
     </p>
     <p class="t-bold f-32">
-      <% link_to "tel:+420608975978", class: "c-black" do %>
-        <%= image_tag "phone.png", class: "phone-icon" %> <span>608 975 978</span>
+      <% link_to "tel:#{t("contact.phone")}", class: "c-black" do %>
+        <%= image_tag "phone.png", class: "phone-icon" %> <span><%=t "contact.phone_title"%></span>
       <% end %>
     </p>
   </div>
