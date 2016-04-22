@@ -6,7 +6,7 @@
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "6 Artisans" %></title>
+    <title><%= t current_page.data.title || "6 Artisans" %></title>
 
     <%= stylesheet_link_tag :application %>
     <link href="images/favicon.ico" rel="shortcut icon">

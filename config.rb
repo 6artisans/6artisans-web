@@ -71,3 +71,5 @@ activate :google_analytics do |ga|
   # Output style - :html includes <script> tag (default = :html)
   # ga.output = :js
 end
+
+activate :i18n
