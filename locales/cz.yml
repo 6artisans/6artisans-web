@@ -4,19 +4,23 @@ cz:
   title: Od nápadu<br>k úspěšnému <br>byznysu
   subtitle: Navrhujeme & programujeme<br>skvělé webové aplikace
   services:
+    slug: co-delame
     title: Co děláme
     specialization: Specializujeme se na návrh, vývoj a řízení inovativních webových projektů. Velmi úzce pracujeme s potenciálními uživateli, testujeme a prototypujeme, abychom vytvořili produkt, který se bude intuitivně ovládat a uživatelé ho budou mít rádi.
     ideation: Ideace
     prototyping: Prototypování
     product: Produkt
   references:
+    slug: proc-my
     title: Proč my
     cto: Nalezení motivovaného CTO může trvat měsíce, sestavení dobrého technického týmu roky. Mnoha společnostem se to dokonce nikdy nepodaří. Najměte si raději celý sehraný tým, který zvládne vyrobit váš online produkt od začátku do konce.
     our_clients: "Přinášíme inovace zavedeným společnostem i&nbsp;start-upům:"
   team:
+    slug: kdo-jsme
     title: Kdo jsme
     description: Jsme malý tým s minimálním komunikačním šumem. Stejní lidé, se kterými si podáte ruku na jednání, budou vyrábět vaši aplikaci.
   contact:
+    slug: kontakt
     title: Kontakt
     comunication: Fungující komunikace je základním předpokladem úspěšného projektu a proto jsme zvyklí pracovat v úzké spolupráci s klientem. Rádi se s vámi sejdeme a poslechneme si váš příběh. Sídlíme v pražském <a href="http://www.hubpraha.cz/" class="link">Impact Hubu</a> a děláme skvělou kávu.
     email_us: První konzultace je zdarma.<br/>Napište nám.

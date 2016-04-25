@@ -3,29 +3,29 @@ title: :page_title
 ---
 <div class="desktop-menu container fixed to-top full-width screen-height none-events z-index-2 animate-menu">
   <div class="grid-1 all-events p-left-4 p-top-4 full-height relative">
-    <% link_to "#" do %>
+    <% link_to "#", data: { scroll_to: "home" } do %>
       <%= image_tag "logo-dark.svg", class: "logo" %>
     <% end %>
 
     <nav class="p-top-3">
       <ul>
         <li>
-          <% link_to "#co-delame", class: "block" do %>
+          <% link_to "##{t :slug, scope: :services}", data: { scroll_to: t(:slug, scope: :services) }, class: "block" do %>
             <span class="f-16 link"><%=t :title, scope: :services %></span>
           <% end %>
         </li>
         <li>
-          <% link_to "#proc-my", class: "block" do %>
+          <% link_to "##{t :slug, scope: :references}", data: { scroll_to: t(:slug, scope: :references) }, class: "block" do %>
             <span class="f-16 link"><%=t :title, scope: :references %></span>
           <% end %>
         </li>
         <li>
-          <% link_to "#kdo-jsme", class: "block" do %>
+          <% link_to "##{t :slug, scope: :team}", data: { scroll_to: t(:slug, scope: :team) }, class: "block" do %>
             <span class="f-16 link"><%=t :title, scope: :team %></span>
           <% end %>
         </li>
         <li>
-          <% link_to "#kontakt", class: "block" do %>
+          <% link_to "##{t :slug, scope: :contact}", data: { scroll_to: t(:slug, scope: :contact) }, class: "block" do %>
             <span class="f-16 link link--red"><%=t :title, scope: :contact %></span>
           <% end %>
         </li>
@@ -34,7 +34,7 @@ title: :page_title
   </div>
 </div>
 
-<div class="section section--without-padding cover grid-6">
+<div id="home" class="section section--without-padding cover grid-6">
   <div class="s-grid-1 m-grid-2 l-grid-2 z-index-1 full-height relative shader--white">&nbsp;</div>
   <div class="s-grid-5 m-grid-3 l-grid-2 relative p-right-2">
     <% link_to "#", class: "mobile-logo absolute animate-menu m-top-4" do %>
@@ -52,7 +52,7 @@ title: :page_title
   <div class="s-grid-1">&nbsp;</div>
 </div>
 
-<div class="grid-6" id="co-delame"></div>
+<div class="grid-6" id="<%=t :slug, scope: :services %>"></div>
 <div class="section grid-6">
   <div class="s-grid-0 m-grid-2 l-grid-2">&nbsp;</div>
   <div class="l-grid-3 m-grid-3">
@@ -78,7 +78,7 @@ title: :page_title
   </div>
 </div>
 
-<div class="grid-6" id="proc-my"></div>
+<div class="grid-6" id="<%=t :slug, scope: :references %>"></div>
 <div class="section grid-6">
   <div class="s-grid-0 m-grid-2 l-grid-2">&nbsp;</div>
   <div class="l-grid-3 m-grid-3">
@@ -97,7 +97,7 @@ title: :page_title
   </div>
 </div>
 
-<div class="grid-6" id="kdo-jsme"></div>
+<div class="grid-6" id="<%=t :slug, scope: :team %>"></div>
 <div class="section grid-6">
   <div class="s-grid-0 m-grid-2 l-grid-2">&nbsp;</div>
   <div class="m-grid-3 l-grid-3">
@@ -122,7 +122,7 @@ title: :page_title
   </div>
 </div>
 
-<div class="grid-6" id="kontakt"></div>
+<div class="grid-6" id="<%=t :slug, scope: :contact %>"></div>
 <div class="section grid-6">
   <div class="s-grid-0 m-grid-2 l-grid-2">&nbsp;</div>
   <div class="m-grid-3 l-grid-3">
@@ -155,3 +155,4 @@ title: :page_title
     </p>
   </div>
 </div>
+
