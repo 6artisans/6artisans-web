@@ -6,7 +6,7 @@ en:
   services:
     slug: what-we-do
     title: What we do
-    specialization: We focus on design, development and management of inovative web projects. We closely work with potential users, testing and prototyping to create an attractive product with intuitive interface.
+    specialization: We focus on design, development and management of inovative web products. We closely work with potential users, testing and prototyping to create an attractive product with intuitive interface.
     ideation: Ideation
     prototyping: Prototyping
     product: Product design
@@ -22,7 +22,7 @@ en:
   contact:
     slug: contact
     title: Contact
-    comunication: Communication is the key to successful project so we work in close collaboration with our clients. We will meet and listen to your vision. We are based in <a href="http://www.hubpraha.cz/" class="link">Impact Hubu</a>, Prague and we can make a great coffee.
+    comunication: Communication is the key to successful product so we work in close collaboration with our clients. We will meet and listen to your vision. We are based in <a href="http://www.hubpraha.cz/" class="link">Impact Hubu</a>, Prague and we can make a great coffee.
     email_us: First consultation is free.<br/>Send us an email.
     call_us: Do you prefer talking?<br/>Call Honza.
     email: "info@6artisans.com"

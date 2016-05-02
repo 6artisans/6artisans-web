@@ -6,7 +6,7 @@ cz:
   services:
     slug: co-delame
     title: Co děláme
-    specialization: Specializujeme se na návrh, vývoj a řízení inovativních webových projektů. Velmi úzce pracujeme s potenciálními uživateli, testujeme a prototypujeme, abychom vytvořili produkt, který se bude intuitivně ovládat a uživatelé ho budou mít rádi.
+    specialization: Specializujeme se na návrh, vývoj a řízení inovativních webových produktů. Velmi úzce pracujeme s potenciálními uživateli, testujeme a prototypujeme, abychom vytvořili produkt, který se bude intuitivně ovládat a uživatelé ho budou mít rádi.
     ideation: Ideace
     prototyping: Prototypování
     product: Produkt
@@ -22,7 +22,7 @@ cz:
   contact:
     slug: kontakt
     title: Kontakt
-    comunication: Fungující komunikace je základním předpokladem úspěšného projektu a proto jsme zvyklí pracovat v úzké spolupráci s klientem. Rádi se s vámi sejdeme a poslechneme si váš příběh. Sídlíme v pražském <a href="http://www.hubpraha.cz/" class="link">Impact Hubu</a> a děláme skvělou kávu.
+    comunication: Fungující komunikace je základním předpokladem úspěšného produktu a proto jsme zvyklí pracovat v úzké spolupráci s klientem. Rádi se s vámi sejdeme a poslechneme si váš příběh. Sídlíme v pražském <a href="http://www.hubpraha.cz/" class="link">Impact Hubu</a> a děláme skvělou kávu.
     email_us: První konzultace je zdarma.<br/>Napište nám.
     call_us: Raději si povídáte?<br/>Zavolejte Honzovi.
     email: "info@6artisans.cz"
