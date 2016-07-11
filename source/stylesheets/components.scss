@@ -108,3 +108,16 @@
   height: 1em;
   vertical-align: sub;
 }
+
+.language {
+  position: absolute;
+  top: 4rem;
+  right: 5rem;
+}
+
+.language .switch {
+  float: right;
+  margin-top: 5px;
+  margin-left: 5px;
+  color: $color-blue;
+}
