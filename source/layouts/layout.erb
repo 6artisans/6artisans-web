@@ -14,11 +14,13 @@
   </head>
 
   <body class="<%= page_classes %>">
+    <% if locale.to_s == "cz" %>
     <div class="language">
       <a href="http://6artisans.com"><img class="flag" src="images/en-icon.png"/></a>
       <div class="switch"><a href="http://6artisans.com">english</a></div>
       </a>
     </div>
+    <% end %>
     <%= yield %>
 
     <div class="grid-layout fixed to-top to-left screen-height full-width container z-index-2">
