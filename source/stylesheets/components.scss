@@ -115,6 +115,12 @@
   right: 5rem;
 }
 
+.language .flag {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  display: inline;
+}
+
 .language .switch {
   float: right;
   margin-top: 5px;
