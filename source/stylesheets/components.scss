@@ -120,12 +120,14 @@
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   display: inline;
+  z-index: 1;
 }
 
 .language .switch {
   float: right;
   margin-top: 5px;
   margin-left: 5px;
+  z-index: 1;
 }
 
 .language .switch a {
