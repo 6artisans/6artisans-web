@@ -108,3 +108,28 @@
   height: 1em;
   vertical-align: sub;
 }
+
+.language {
+  position: absolute;
+  top: 4rem;
+  right: 5rem;
+  z-index: 1;
+}
+
+.language .flag {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  display: inline;
+  z-index: 1;
+}
+
+.language .switch {
+  float: right;
+  margin-top: 5px;
+  margin-left: 5px;
+  z-index: 1;
+}
+
+.language .switch a {
+  color: $color-blue;
+}
