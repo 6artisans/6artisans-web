@@ -10,8 +10,13 @@ title: :page_title
     <nav class="p-top-3">
       <ul>
         <li>
-          <% link_to "##{t :slug, scope: :services}", data: { scroll_to: t(:slug, scope: :services) }, class: "block" do %>
-            <span class="f-16 link"><%=t :title, scope: :services %></span>
+          <% link_to "##{t :slug, scope: :innovations}", data: { scroll_to: t(:slug, scope: :innovations) }, class: "block" do %>
+            <span class="f-16 link"><%=t :title, scope: :innovations %></span>
+          <% end %>
+        </li>
+        <li>
+          <% link_to "##{t :slug, scope: :isystems}", data: { scroll_to: t(:slug, scope: :isystems) }, class: "block" do %>
+            <span class="f-16 link"><%=t :title, scope: :isystems %></span>
           <% end %>
         </li>
         <li>
@@ -52,27 +57,48 @@ title: :page_title
   <div class="s-grid-1">&nbsp;</div>
 </div>
 
-<div class="grid-6" id="<%=t :slug, scope: :services %>"></div>
+<div class="grid-6" id="<%=t :slug, scope: :innovations %>"></div>
 <div class="section grid-6">
   <div class="s-grid-0 m-grid-2 l-grid-2">&nbsp;</div>
   <div class="l-grid-3 m-grid-3">
-    <h2 class="f-32 m-bottom-2"><%=t :title, scope: :services  %></h2>
+    <h2 class="f-32 m-bottom-2"><%=t :title, scope: :innovations  %></h2>
     <p class="f-21 m-bottom-3">
-      <%=t :specialization, scope: :services %>
+      <%=t :specialization, scope: :innovations %>
     </p>
 
     <div class="flex space-between wrap">
       <div class="t-centered m-right-2 p-bottom-3 p-right-2 s-grid-6 m-grid-2 l-grid-2">
         <%= image_tag "ideation.png", class: "image" %>
-        <div class="t-bold c-grey m-top-1"><%=t :ideation, scope: :services %></div>
+        <div class="t-bold c-grey m-top-1"><%=t :ideation, scope: :innovations %></div>
       </div>
       <div class="t-centered m-right-2 p-left-1 p-right-1 p-bottom-3 s-grid-6 m-grid-2 l-grid-2">
         <%= image_tag "prototype.png", class: "image" %>
-        <div class="t-bold c-grey m-top-1"><%=t :prototyping, scope: :services %></div>
+        <div class="t-bold c-grey m-top-1"><%=t :prototyping, scope: :innovations %></div>
       </div>
       <div class="t-centered p-bottom-3 p-left-2 s-grid-6 m-grid-2 l-grid-2">
         <%= image_tag "product.png", class: "image" %>
-        <div class="t-bold c-grey m-top-1"><%=t :product, scope: :services %></div>
+        <div class="t-bold c-grey m-top-1"><%=t :product, scope: :innovations %></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="grid-6" id="<%=t :slug, scope: :isystems %>"></div>
+<div class="section grid-6">
+  <div class="s-grid-0 m-grid-2 l-grid-2">&nbsp;</div>
+  <div class="l-grid-3 m-grid-3">
+    <h2 class="f-32 m-bottom-2"><%=t :title, scope: :isystems  %></h2>
+    <p class="f-21 m-bottom-3">
+      <%=t :specialization, scope: :isystems %>
+    </p>
+    <p class="f-21 m-bottom-3">
+      <%=t :analysis, scope: :isystems %> &mdash;
+      <%=t :integration, scope: :isystems %> &mdash;
+      <%=t :cloud, scope: :isystems %>
+    </p>
+    <div class="flex space-between wrap">
+      <div class="t-centered s-grid-6 m-grid-6 l-grid-6">
+        <%= image_tag "cloud.png", class: "image" %>
       </div>
     </div>
   </div>

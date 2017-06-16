@@ -3,13 +3,20 @@ en:
   page_title: From ideas to successful business - 6 Artisans
   title: From ideas<br>to&nbsp;successful <br>business
   subtitle: Internet applications<br/>and&nbsp;custom software development
-  services:
+  innovations:
     slug: what-we-do
     title: What we do
     specialization: We focus on design, development and management of inovative web products. We closely work with potential users, testing and prototyping to create an attractive product with intuitive interface.
     ideation: Ideation
     prototyping: Prototyping
     product: Product design
+  isystems:
+    slug: isystems
+    title: Internal systems
+    specialization: Digitalization of processes will increase efficiency of your company. Custom information systems, from order management, data processing and transformation, to dispatcher and management systems.
+    analysis: Analysis and process design
+    integration: Other systems integration
+    cloud: Cloud solutions
   references:
     slug: why-us
     title: Why us

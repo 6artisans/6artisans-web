@@ -29,6 +29,12 @@ p {
   line-height: 1.7em;
 }
 
+ul {
+  li {
+    font-size: $size-base;
+  }
+}
+
 nav {
   ul {
     list-style: none;
@@ -37,7 +43,7 @@ nav {
 
   li {
     margin-bottom: 2.5em;
-    width: 6rem;
+    width: 11rem;
   }
 }
 

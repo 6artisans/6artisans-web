@@ -3,21 +3,28 @@ cz:
   page_title: Od nápadu k úspěšnému byznysu - 6 Artisans
   title: Od nápadu<br/>k&nbsp;úspěšnému<br/>byznysu
   subtitle: Vývoj internetových aplikací<br/>a&nbsp;sofwarových systémů na míru
-  services:
-    slug: co-delame
-    title: Co děláme
+  innovations:
+    slug: innovations
+    title: Vývoj nových produktů
     specialization: Specializujeme se na návrh, vývoj a řízení inovativních webových produktů. Velmi úzce pracujeme s potenciálními uživateli, testujeme a prototypujeme, abychom vytvořili produkt, který se bude intuitivně ovládat a uživatelé ho budou mít rádi.
     ideation: Ideace
     prototyping: Prototypování
     product: Produkt
+  isystems:
+    slug: isystems
+    title: Interní systémy
+    specialization: Zefektivníme chod vaší firmy digitalizací práce. Informační systémy na zakázku, od správy objednávek, přes zpracování a transformaci dat, po dispečerské a kontrolní systémy.
+    analysis: Analýza a návrh procesů
+    integration: Integrace s jinými systémy
+    cloud: Cloudová řešení
   references:
-    slug: proc-my
-    title: Proč my
+    slug: reference
+    title: Reference
     cto: Nalezení motivovaného CTO může trvat měsíce, sestavení dobrého technického týmu roky. Mnoha společnostem se to dokonce nikdy nepodaří. Najměte si raději celý sehraný tým, který zvládne vyrobit váš online produkt od začátku do konce.
     our_clients: "Přinášíme inovace zavedeným společnostem i&nbsp;start-upům:"
   team:
-    slug: kdo-jsme
-    title: Kdo jsme
+    slug: tym
+    title: Tým
     description: Jsme malý tým s minimálním komunikačním šumem. Stejní lidé, se kterými si podáte ruku na jednání, budou vyrábět vaši aplikaci.
   contact:
     slug: kontakt
