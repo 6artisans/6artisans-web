@@ -14,6 +14,10 @@
     }
   }
 
+  div.dashed {
+    border-right: 1px dashed $color-grid;
+  }
+
   &__unit {
     color: $color-grid-unit;
     font-size: rem(11px);

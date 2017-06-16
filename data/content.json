@@ -1,29 +1,44 @@
 {
   "team": [
     {
-      "name": "Tomáš Porazil",
-      "image": "tomas.png",
-      "title": "user experience,<br/> development"
-    },
-    {
       "name": "Honza Minárik",
-      "image": "honza.png",
-      "title": "software architecture,<br/> development"
+      "image": "honza.jpg",
+      "title": "software architect,<br/> product analyst"
     },
     {
       "name": "David Schovanec",
       "image": "david.png",
-      "title": "frontend development"
-    },
-    {
-      "name": "Jano Hovančík",
-      "image": "jano.png",
-      "title": "backend development"
+      "title": "full-stack developer"
     },
     {
       "name": "Josef Rousek",
       "image": "josef.png",
-      "title": "full-stack development"
+      "title": "full-stack developer"
+    },
+    {
+      "name": "David Nekovář",
+      "image": "dave.jpg",
+      "title": "full-stack developer,<br/> product analyst"
+    },
+    {
+      "name": "Jan Chmelíček",
+      "image": "chmelda.png",
+      "title": "back-end developer"
+    },
+    {
+      "name": "Filip Zrůst",
+      "image": "filip.jpg",
+      "title": "full-stack developer"
+    },
+    {
+      "name": "Tomáš Porazil",
+      "image": "tomas.png",
+      "title": "user experience designer,<br/> product analyst"
+    },
+    {
+      "name": "Radek Matěj",
+      "image": "radek.jpg",
+      "title": "user experience designer,<br/> front-end developer"
     },
     {
       "name": "Petra Špičková",
@@ -39,8 +54,10 @@
     "miton",
     "ignum",
     "duha",
-    "mikov"
+    "mikov",
+    "brand-embassy",
+    "conectart",
+    "dodo",
+    "enrian"
   ]
 }
-
-
