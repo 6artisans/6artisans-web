@@ -6,13 +6,13 @@
       "title": "software architect,<br/> product analyst"
     },
     {
-      "name": "David Schovanec",
-      "image": "david.png",
+      "name": "Josef Rousek",
+      "image": "josef.png",
       "title": "full-stack developer"
     },
     {
-      "name": "Josef Rousek",
-      "image": "josef.png",
+      "name": "Filip Zrůst",
+      "image": "filip.jpg",
       "title": "full-stack developer"
     },
     {
@@ -21,14 +21,14 @@
       "title": "full-stack developer,<br/> product analyst"
     },
     {
+      "name": "David Schovanec",
+      "image": "david.png",
+      "title": "full-stack developer"
+    },
+    {
       "name": "Jan Chmelíček",
       "image": "chmelda.png",
       "title": "back-end developer"
-    },
-    {
-      "name": "Filip Zrůst",
-      "image": "filip.jpg",
-      "title": "full-stack developer"
     },
     {
       "name": "Adam Martiník",
@@ -39,11 +39,6 @@
       "name": "Radek Matěj",
       "image": "radek.jpg",
       "title": "user experience designer,<br/> front-end developer"
-    },
-    {
-      "name": "Petra Špičková",
-      "image": "petra.png",
-      "title": "project management"
     }
   ],
   "clients": [
