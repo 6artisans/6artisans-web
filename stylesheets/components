@@ -1,0 +1,95 @@
+.grid-layout {
+  pointer-events: none; }
+  .grid-layout div {
+    border-right: 1px solid rgba(147, 166, 180, 0.2); }
+    .grid-layout div:last-child {
+      border: 0; }
+  .grid-layout div.dashed {
+    border-right: 1px dashed rgba(147, 166, 180, 0.2); }
+  .grid-layout__unit {
+    color: rgba(147, 166, 180, 0.6);
+    font-size: 0.6875rem;
+    padding-left: 0.1875rem; }
+
+.logo {
+  width: 11.875rem; }
+
+.link {
+  border-bottom: 1px solid #ddf0f9;
+  color: #2da4dd;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color 300ms ease-out; }
+  .link:hover {
+    border-color: currentColor; }
+  .link--red {
+    color: #e34459; }
+
+.button {
+  background-color: #e34459;
+  color: white;
+  box-shadow: 0 1px 1px 0 #231f20;
+  font-size: 1.125rem;
+  border-radius: 25px;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 2.5rem;
+  padding: 0.1em 1.8em;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.clients {
+  margin-top: 8.75rem; }
+  .clients_logo-holder {
+    display: inline-block; }
+  .clients a {
+    margin: 0 auto;
+    vertical-align: middle; }
+
+.team__divider {
+  padding-top: 3.4375rem; }
+.team__name {
+  line-height: 1.575rem;
+  margin-bottom: 0.65rem;
+  margin-top: 0.5rem; }
+.team__title {
+  height: 40px; }
+.team__member {
+  min-height: 20rem;
+  padding-right: 1rem; }
+
+.contact__to-action {
+  line-height: 1.8125rem;
+  margin-bottom: 1.25rem; }
+
+.shader--white {
+  background-color: white; }
+
+.image {
+  max-width: 100%;
+  max-height: 100%; }
+
+.phone-icon {
+  height: 1em;
+  vertical-align: sub; }
+
+.language {
+  position: absolute;
+  top: 4rem;
+  right: 5rem;
+  z-index: 1; }
+
+.language .flag {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  display: inline;
+  z-index: 1; }
+
+.language .switch {
+  float: right;
+  margin-top: 5px;
+  margin-left: 5px;
+  z-index: 1; }
+
+.language .switch a {
+  color: #2da4dd; }

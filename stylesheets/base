@@ -1,0 +1,36 @@
+html {
+  color: #231f20;
+  font-family: "Proxima Nova Rg", "helvetica", "sans-serif";
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4em; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Proxima Nova Bl", "helvetica", "sans-serif";
+  line-height: 1.4em;
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin: 0;
+  margin-bottom: 1.56rem;
+  line-height: 1.7em; }
+
+ul li {
+  font-size: 16px; }
+
+nav ul {
+  list-style: none;
+  padding: 0; }
+nav li {
+  margin-bottom: 2.5em;
+  width: 11rem; }
+
+a {
+  text-decoration: none; }
